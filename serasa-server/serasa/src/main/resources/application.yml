@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: serasa
+grpc:
+  server:
+    health:
+      enabled: true

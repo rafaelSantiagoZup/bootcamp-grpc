@@ -1,0 +1,6 @@
+applicationType: grpc
+defaultPackage: br.com.edu.zup
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, data, data-jpa, gradle, grpc, java, java-application, jdbc-hikari, junit, logback, postgres, readme, shade, testcontainers, yaml]

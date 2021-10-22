@@ -1,0 +1,24 @@
+micronaut:
+  server:
+    port: 8081
+  application:
+    name: serasa
+grpc:
+  channels:
+    serasa:
+      address: 'localhost:50051'
+      plaintext: true
+      max-retry-attempts: 10
+
+endpoints:
+  all:
+    sensitive
+  health:
+    enabled: true
+    sensitive: false
+    details-visible: ANONYMOUS
+    status:
+      http-mapping:
+        DOWN: 503
+        UP: 200
+        UNKNOWN: 200
